@@ -26,5 +26,16 @@ int main()
 		}
 		cout << " = " << totalr << endl; //print total
 	}
+	cout << "Table with the totals of each column is: " << endl;
+	for (i = 0; i < rows; i++)
+	{
+		totalc = 0; //reset total at the beginning of each row
+		for (j = 0; j < columns; j++)
+		{
+			cout << A[j][i] << " ";
+			totalc = totalc + A[j][i]; //add to total
+		}
+		cout << " = " << totalc << endl; //print total
+	}
 	return 0;
 }//main
