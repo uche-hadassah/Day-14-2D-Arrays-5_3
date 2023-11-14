@@ -7,7 +7,7 @@ int main()
 	const int rows = 3;
 	const int columns = 3;
 	int A[rows][columns];
-	int i, j, total = 0;
+	int i, j, totalr = 0,totalc = 0;
 	cout << "Enter " << rows * columns << " integers, " << columns << " per row: " <<endl;
 		for (i = 0; i < rows; i++)
 		{
@@ -18,13 +18,13 @@ int main()
 	cout << "Table with the totals of each row is: " << endl;
 	for (i = 0; i < rows; i++)
 	{
-		total = 0; //reset total at the beginning of each row
+		totalr = 0; //reset total at the beginning of each row
 		for (j = 0; j < columns; j++)
 		{
 			cout << A[i][j] << " ";
-			total = total + A[i][j]; //add to total
+			totalr = totalr + A[i][j]; //add to total
 		}
-		cout << " = " << total << endl; //print total
+		cout << " = " << totalr << endl; //print total
 	}
 	return 0;
 }//main
